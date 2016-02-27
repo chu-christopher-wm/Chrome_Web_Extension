@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "EasyAccess",
+  "description": "This extension allows you to browse in a smaller browser while still on the current page your are on.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["content.js"]
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+
+  "browser_action": {
+    "default_icon": "d2dd2a63-5653-416f-bfe1-6782e4abe552.png",
+    "default_popup": "popup.html",
+    "default_title": "EasyAccess"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "https://www.google.com/",
+    "background",
+    "pageCapture",
+    "tabCapture",
+    "https://www.google.com/"
+
+  ]
+}
